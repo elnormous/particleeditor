@@ -11,8 +11,6 @@
 		303BFC331BC5D870007026CC /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 303BFC321BC5D870007026CC /* libcurl.tbd */; };
 		306ED3581BD6E00500A0A5EF /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 303BFC2A1BC5D7C6007026CC /* libiconv.tbd */; };
 		306FDFB71A607C440089CA66 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 306FDFB61A607C440089CA66 /* libcocos2d Mac.a */; };
-		306FDFBD1A6087400089CA66 /* libfmodL.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 306FDFBB1A6087400089CA66 /* libfmodL.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		306FDFBF1A60877F0089CA66 /* libfmodstudioL.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 306FDFBE1A60877F0089CA66 /* libfmodstudioL.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		30DEBFE31BF2DA8000A9824F /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DEBFE21BF2DA8000A9824F /* Carbon.framework */; };
 		503AE10517EB98FF00D1A890 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
 		503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11A17EB9C5A00D1A890 /* IOKit.framework */; };
@@ -35,8 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				306FDFBF1A60877F0089CA66 /* libfmodstudioL.dylib in CopyFiles */,
-				306FDFBD1A6087400089CA66 /* libfmodL.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,31 +67,6 @@
 		302BD3071A349ED40091A274 /* blood.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = blood.plist; sourceTree = "<group>"; };
 		302BD3081A349ED40091A274 /* blood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blood.png; sourceTree = "<group>"; };
 		302D78171BDA267500D03C6C /* main_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_menu.png; sourceTree = "<group>"; };
-		302F88C51BB89B03003EE292 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		302F88C61BB89B03003EE292 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
-		302F88C71BB89B03003EE292 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		302F88C81BB89B03003EE292 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		302F88C91BB89B03003EE292 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		302F88CA1BB89B03003EE292 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
-		302F88CB1BB89B03003EE292 /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = "<group>"; };
-		302F88CC1BB89B03003EE292 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
-		302F88CD1BB89B03003EE292 /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
-		302F88CE1BB89B03003EE292 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
-		302F88CF1BB89B03003EE292 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
-		302F88D01BB89B03003EE292 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
-		302F88D11BB89B03003EE292 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
-		302F88D21BB89B03003EE292 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
-		302F88D31BB89B03003EE292 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58.png"; sourceTree = "<group>"; };
-		302F88D41BB89B03003EE292 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		302F88D51BB89B03003EE292 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		302F88D61BB89B03003EE292 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
-		302F88D71BB89B03003EE292 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		302F88D81BB89B03003EE292 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		302F88D91BB89B03003EE292 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		302F88DA1BB89B03003EE292 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		302F88DB1BB89B03003EE292 /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
-		302F88F11BB89B6A003EE292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ios/Info.plist; sourceTree = SOURCE_ROOT; };
-		302F88F21BB89D31003EE292 /* libcocos2d tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d tvOS.a"; path = "../../../Libraries/cocos2d-x/build/build/Release-appletvos/libcocos2d tvOS.a"; sourceTree = "<group>"; };
 		303BFC2A1BC5D7C6007026CC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		303BFC2C1BC5D851007026CC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
 		303BFC2E1BC5D859007026CC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
@@ -114,7 +85,6 @@
 		3047768E1BE98C1200EBE002 /* bat-flying.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "bat-flying.plist"; sourceTree = "<group>"; };
 		3047768F1BE98C1200EBE002 /* bat-flying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bat-flying.png"; sourceTree = "<group>"; };
 		304776901BE98C1200EBE002 /* bat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bat.png; sourceTree = "<group>"; };
-		304782221BC4B4000055C0E9 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		3056AF861A8D90F000C9AFB8 /* life.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = life.png; sourceTree = "<group>"; };
 		305DEEE61AD3267F0063BC80 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		306A62881B6CBA7F003D22A6 /* font.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = font.fnt; sourceTree = "<group>"; };
@@ -122,10 +92,6 @@
 		306A628E1B6CBB31003D22A6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		306ED3561BD6DFD100A0A5EF /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
 		306FDFB61A607C440089CA66 /* libcocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d Mac.a"; path = "../../../Libraries/cocos2d-x-3.3/build/build/libcocos2d Mac.a"; sourceTree = "<group>"; };
-		306FDFB81A607C4C0089CA66 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "../../../Libraries/cocos2d-x-3.3/build/build/libcocos2d iOS.a"; sourceTree = "<group>"; };
-		306FDFBA1A6087400089CA66 /* libfmod.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmod.dylib; path = "../../../Libraries/FMOD Programmers API/api/lowlevel/lib/libfmod.dylib"; sourceTree = "<group>"; };
-		306FDFBB1A6087400089CA66 /* libfmodL.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodL.dylib; path = "../../../Libraries/FMOD Programmers API/api/lowlevel/lib/libfmodL.dylib"; sourceTree = "<group>"; };
-		306FDFBE1A60877F0089CA66 /* libfmodstudioL.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodstudioL.dylib; path = "../../../Libraries/FMOD Programmers API/api/studio/lib/libfmodstudioL.dylib"; sourceTree = "<group>"; };
 		307697CA1BA6236900DC9F7C /* stopsign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopsign.png; sourceTree = "<group>"; };
 		307E7ABE1AC1FED500CFB82B /* back-grass01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-grass01.png"; sourceTree = "<group>"; };
 		307E7ABF1AC1FED500CFB82B /* back-grass02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-grass02.png"; sourceTree = "<group>"; };
@@ -244,35 +210,13 @@
 		30F4BE641AC79577006D4FAD /* obstacle02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obstacle02.png; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mac/Info.plist; sourceTree = "<group>"; };
-		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
-		503AE0FB17EB989F00D1A890 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppController.mm; path = ios/AppController.mm; sourceTree = SOURCE_ROOT; };
-		503AE0FC17EB989F00D1A890 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ios/main.m; sourceTree = SOURCE_ROOT; };
-		503AE0FD17EB989F00D1A890 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = ios/Prefix.pch; sourceTree = SOURCE_ROOT; };
-		503AE0FE17EB989F00D1A890 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ios/RootViewController.h; sourceTree = SOURCE_ROOT; };
-		503AE0FF17EB989F00D1A890 /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController.mm; path = ios/RootViewController.mm; sourceTree = SOURCE_ROOT; };
 		503AE10317EB98FF00D1A890 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = mac/main.cpp; sourceTree = "<group>"; };
 		503AE10417EB98FF00D1A890 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = mac/Prefix.pch; sourceTree = "<group>"; };
 		503AE11117EB99EE00D1A890 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
 		503AE11A17EB9C5A00D1A890 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
-		5087E76F17EB910900C73F5D /* ParticleEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParticleEditor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5087E77217EB970100C73F5D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5087E77317EB970100C73F5D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		5087E77417EB970100C73F5D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		5087E77517EB970100C73F5D /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = "<group>"; };
-		5087E77617EB970100C73F5D /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
-		5087E77717EB970100C73F5D /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
-		5087E77817EB970100C73F5D /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
-		5087E77917EB970100C73F5D /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
-		5087E77A17EB970100C73F5D /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		5087E77B17EB970100C73F5D /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		5087E76F17EB910900C73F5D /* ParticleEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ParticleEditor.app; path = "ParticleEditor iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5087E78817EB974C00C73F5D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		5087E78A17EB975400C73F5D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		50EF629217ECD46A001EB2F8 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
-		50EF629317ECD46A001EB2F8 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58.png"; sourceTree = "<group>"; };
-		50EF629417ECD46A001EB2F8 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
-		50EF629517ECD46A001EB2F8 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
-		50EF62A017ECD613001EB2F8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
-		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -305,22 +249,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				5087E77117EB970100C73F5D /* Icons */,
-				503AE0FA17EB989F00D1A890 /* AppController.h */,
-				503AE0FB17EB989F00D1A890 /* AppController.mm */,
-				302F88F11BB89B6A003EE292 /* Info.plist */,
-				503AE0FC17EB989F00D1A890 /* main.m */,
-				503AE0FD17EB989F00D1A890 /* Prefix.pch */,
-				503AE0FE17EB989F00D1A890 /* RootViewController.h */,
-				503AE0FF17EB989F00D1A890 /* RootViewController.mm */,
-			);
-			name = ios;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,9 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				15AA9C4015B7EC450033D6C2 /* Classes */,
-				080E96DDFE201D6D7F000001 /* ios */,
 				503AE10617EB990700D1A890 /* mac */,
-				302F88C41BB89B02003EE292 /* tvos */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				78C7DDAA14EBA5050085D0C2 /* Resources */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -369,12 +295,7 @@
 				303BFC2E1BC5D859007026CC /* libz.tbd */,
 				303BFC2C1BC5D851007026CC /* libiconv.tbd */,
 				303BFC2A1BC5D7C6007026CC /* libiconv.tbd */,
-				306FDFBE1A60877F0089CA66 /* libfmodstudioL.dylib */,
-				306FDFBA1A6087400089CA66 /* libfmod.dylib */,
-				306FDFBB1A6087400089CA66 /* libfmodL.dylib */,
 				306FDFB61A607C440089CA66 /* libcocos2d Mac.a */,
-				306FDFB81A607C4C0089CA66 /* libcocos2d iOS.a */,
-				302F88F21BB89D31003EE292 /* libcocos2d tvOS.a */,
 				303CF82B1A1CE213008EFEF8 /* UIKit.framework */,
 				303CF8291A1CE202008EFEF8 /* CoreMotion.framework */,
 				303CF8271A1CE1F4008EFEF8 /* OpenGLES.framework */,
@@ -391,45 +312,6 @@
 				BF1C47EA1293683800B63C5D /* QuartzCore.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		302F88C41BB89B02003EE292 /* tvos */ = {
-			isa = PBXGroup;
-			children = (
-				302F88F01BB89B34003EE292 /* icons */,
-				302F88C51BB89B03003EE292 /* AppController.h */,
-				302F88C61BB89B03003EE292 /* AppController.mm */,
-				302F88D71BB89B03003EE292 /* Info.plist */,
-				302F88D81BB89B03003EE292 /* main.m */,
-				302F88D91BB89B03003EE292 /* Prefix.pch */,
-				302F88DA1BB89B03003EE292 /* RootViewController.h */,
-				302F88DB1BB89B03003EE292 /* RootViewController.mm */,
-			);
-			path = tvos;
-			sourceTree = "<group>";
-		};
-		302F88F01BB89B34003EE292 /* icons */ = {
-			isa = PBXGroup;
-			children = (
-				302F88C71BB89B03003EE292 /* Default-568h@2x.png */,
-				302F88C81BB89B03003EE292 /* Default.png */,
-				302F88C91BB89B03003EE292 /* Default@2x.png */,
-				302F88CA1BB89B03003EE292 /* Icon-100.png */,
-				302F88CB1BB89B03003EE292 /* Icon-114.png */,
-				302F88CC1BB89B03003EE292 /* Icon-120.png */,
-				302F88CD1BB89B03003EE292 /* Icon-144.png */,
-				302F88CE1BB89B03003EE292 /* Icon-152.png */,
-				302F88CF1BB89B03003EE292 /* Icon-29.png */,
-				302F88D01BB89B03003EE292 /* Icon-40.png */,
-				302F88D11BB89B03003EE292 /* Icon-50.png */,
-				302F88D21BB89B03003EE292 /* Icon-57.png */,
-				302F88D31BB89B03003EE292 /* Icon-58.png */,
-				302F88D41BB89B03003EE292 /* Icon-72.png */,
-				302F88D51BB89B03003EE292 /* Icon-76.png */,
-				302F88D61BB89B03003EE292 /* Icon-80.png */,
-				304782221BC4B4000055C0E9 /* Icons.xcassets */,
-			);
-			name = icons;
 			sourceTree = "<group>";
 		};
 		30C31F151A488F2B00E26C73 /* Interface */ = {
@@ -460,30 +342,6 @@
 			);
 			name = mac;
 			sourceTree = "<group>";
-		};
-		5087E77117EB970100C73F5D /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				5087E77217EB970100C73F5D /* Default-568h@2x.png */,
-				5087E77317EB970100C73F5D /* Default.png */,
-				5087E77417EB970100C73F5D /* Default@2x.png */,
-				50EF62A017ECD613001EB2F8 /* Icon-29.png */,
-				50EF62A117ECD613001EB2F8 /* Icon-50.png */,
-				50EF629217ECD46A001EB2F8 /* Icon-40.png */,
-				50EF629317ECD46A001EB2F8 /* Icon-58.png */,
-				50EF629417ECD46A001EB2F8 /* Icon-80.png */,
-				50EF629517ECD46A001EB2F8 /* Icon-100.png */,
-				5087E77517EB970100C73F5D /* Icon-114.png */,
-				5087E77617EB970100C73F5D /* Icon-120.png */,
-				5087E77717EB970100C73F5D /* Icon-144.png */,
-				5087E77817EB970100C73F5D /* Icon-152.png */,
-				5087E77917EB970100C73F5D /* Icon-57.png */,
-				5087E77A17EB970100C73F5D /* Icon-72.png */,
-				5087E77B17EB970100C73F5D /* Icon-76.png */,
-			);
-			name = Icons;
-			path = ios;
-			sourceTree = SOURCE_ROOT;
 		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
