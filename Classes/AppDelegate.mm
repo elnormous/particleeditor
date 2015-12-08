@@ -1,6 +1,8 @@
 #include "AppDelegate.h"
 #include "Editor.h"
 
+#include "ViewController.h"
+
 USING_NS_CC;
 
 AppDelegate::AppDelegate()
@@ -34,7 +36,12 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     auto scene = ParticleEditor::Editor::create();
     director->runWithScene(scene);
-
+    
+    ViewController *vc = [[ViewController alloc] initWithNibName:@"MainMenu" bundle:nil];
+    [vc view];
+    //[vc view];
+    [NSApplication sharedApplication].mainMenu = vc.mainMenu;
+    
     return true;
 }
 

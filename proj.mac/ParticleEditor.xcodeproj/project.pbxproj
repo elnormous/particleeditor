@@ -11,10 +11,13 @@
 		303BFC331BC5D870007026CC /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 303BFC321BC5D870007026CC /* libcurl.tbd */; };
 		306ED3581BD6E00500A0A5EF /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 303BFC2A1BC5D7C6007026CC /* libiconv.tbd */; };
 		306FDFB71A607C440089CA66 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 306FDFB61A607C440089CA66 /* libcocos2d Mac.a */; };
+		30A7901F1C1788840044CDD0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A7901E1C1788840044CDD0 /* MainMenu.xib */; };
+		30A790211C1789AD0044CDD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A790201C1789AD0044CDD0 /* ViewController.m */; };
+		30A790251C1798930044CDD0 /* Toolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A790241C1798930044CDD0 /* Toolbox.m */; };
 		30DEBFE31BF2DA8000A9824F /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DEBFE21BF2DA8000A9824F /* Carbon.framework */; };
 		503AE10517EB98FF00D1A890 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
 		503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11A17EB9C5A00D1A890 /* IOKit.framework */; };
-		5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */; };
+		5087E75717EB910900C73F5D /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B316D35DE700DB1158 /* AppDelegate.mm */; };
 		5087E75817EB910900C73F5D /* Editor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B516D35DE700DB1158 /* Editor.cpp */; };
 		5087E76317EB910900C73F5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		5087E76517EB910900C73F5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -39,7 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
+		1AFAF8B316D35DE700DB1158 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = ../Classes/AppDelegate.mm; sourceTree = "<group>"; };
 		1AFAF8B416D35DE700DB1158 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Classes/AppDelegate.h; sourceTree = "<group>"; };
 		1AFAF8B516D35DE700DB1158 /* Editor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Editor.cpp; path = ../Classes/Editor.cpp; sourceTree = "<group>"; };
 		1AFAF8B616D35DE700DB1158 /* Editor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Editor.h; path = ../Classes/Editor.h; sourceTree = "<group>"; };
@@ -59,6 +62,11 @@
 		306ED3561BD6DFD100A0A5EF /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
 		306FDFB61A607C440089CA66 /* libcocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d Mac.a"; path = "../../../Libraries/cocos2d-x-3.3/build/build/libcocos2d Mac.a"; sourceTree = "<group>"; };
 		3082AE271BF80843000EED2D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		30A7901E1C1788840044CDD0 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = mac/MainMenu.xib; sourceTree = "<group>"; };
+		30A790201C1789AD0044CDD0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = mac/ViewController.m; sourceTree = "<group>"; };
+		30A790231C178A1F0044CDD0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = mac/ViewController.h; sourceTree = "<group>"; };
+		30A790241C1798930044CDD0 /* Toolbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Toolbox.m; path = mac/Toolbox.m; sourceTree = "<group>"; };
+		30A790261C17989F0044CDD0 /* Toolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Toolbox.h; path = mac/Toolbox.h; sourceTree = "<group>"; };
 		30DEBFE01BF2DA4300A9824F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		30DEBFE21BF2DA8000A9824F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
@@ -106,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				30C31F151A488F2B00E26C73 /* Interface */,
-				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
+				1AFAF8B316D35DE700DB1158 /* AppDelegate.mm */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 			);
 			name = Classes;
@@ -192,6 +200,11 @@
 				503AE0F717EB97AB00D1A890 /* Info.plist */,
 				503AE10317EB98FF00D1A890 /* main.cpp */,
 				503AE10417EB98FF00D1A890 /* Prefix.pch */,
+				30A7901E1C1788840044CDD0 /* MainMenu.xib */,
+				30A790201C1789AD0044CDD0 /* ViewController.m */,
+				30A790231C178A1F0044CDD0 /* ViewController.h */,
+				30A790241C1798930044CDD0 /* Toolbox.m */,
+				30A790261C17989F0044CDD0 /* Toolbox.h */,
 			);
 			name = mac;
 			sourceTree = "<group>";
@@ -257,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A7901F1C1788840044CDD0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
+				5087E75717EB910900C73F5D /* AppDelegate.mm in Sources */,
 				5087E75817EB910900C73F5D /* Editor.cpp in Sources */,
+				30A790251C1798930044CDD0 /* Toolbox.m in Sources */,
+				30A790211C1789AD0044CDD0 /* ViewController.m in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
