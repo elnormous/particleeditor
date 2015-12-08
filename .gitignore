@@ -26,3 +26,5 @@
 *.exe
 *.out
 *.app
+proj.mac/ParticleEditor.xcodeproj/project.xcworkspace
+proj.mac/ParticleEditor.xcodeproj/xcuserdata
