@@ -23,7 +23,18 @@
 
 - (void)viewDidLoad
 {
+
+}
+
+- (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename
+{
+    NSWindow* mainWindow = [NSApplication sharedApplication].mainWindow;
     
+    NSAlert* alert = [NSAlert alertWithMessageText:@"Test" defaultButton:@"OK" alternateButton:@"Cancel" otherButton:Nil informativeTextWithFormat:@"openFile"];
+    
+    [alert beginSheetModalForWindow:mainWindow completionHandler:Nil];
+    
+    return YES;
 }
 
 - (IBAction)handleNew:(id)sender

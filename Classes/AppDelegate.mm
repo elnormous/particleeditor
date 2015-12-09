@@ -24,8 +24,6 @@ bool AppDelegate::applicationDidFinishLaunching()
         director->setOpenGLView(glview);
     }
 	
-	//glview->setDesignResolutionSize(RESOLUTION.width, RESOLUTION.height, ResolutionPolicy::SHOW_ALL); //ResolutionPolicy::EXACT_FIT
-
     // turn on display FPS
     //director->setDisplayStats(true);
 
@@ -38,6 +36,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     director->runWithScene(scene);
     
     ViewController *vc = [[ViewController alloc] initWithNibName:@"MainMenu" bundle:nil];
+    [[NSApplication sharedApplication] setDelegate:vc];
+    
     [vc view];
     //[vc view];
     [NSApplication sharedApplication].mainMenu = vc.mainMenu;
