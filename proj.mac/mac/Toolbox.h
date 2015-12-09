@@ -7,7 +7,7 @@
 //
 #import <Foundation/Foundation.h>
 
-@interface Toolbox : NSWindow
+@interface Toolbox : NSPanel
 
 
 @end

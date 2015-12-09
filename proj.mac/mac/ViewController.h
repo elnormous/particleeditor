@@ -9,7 +9,7 @@
 
 @interface ViewController : NSViewController<NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow* window;
+@property (assign) IBOutlet NSPanel* window;
 @property (assign) IBOutlet NSMenu* mainMenu;
 
 @end

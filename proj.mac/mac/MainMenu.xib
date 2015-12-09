@@ -8,8 +8,8 @@
         <customObject id="-2" userLabel="File's Owner" customClass="ViewController">
             <connections>
                 <outlet property="mainMenu" destination="AYu-sK-qS6" id="xL1-eI-9T3"/>
-                <outlet property="view" destination="GSM-ru-sAf" id="FCa-0e-anv"/>
-                <outlet property="window" destination="nNy-KM-sNm" id="BDa-8L-uNg"/>
+                <outlet property="view" destination="iPI-5f-Gcn" id="Eyr-Kd-yqD"/>
+                <outlet property="window" destination="CjT-U4-1FX" id="fZd-lS-Gl4"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -676,16 +676,16 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="nNy-KM-sNm" customClass="Toolbox">
-            <windowStyleMask key="styleMask" titled="YES"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="CjT-U4-1FX" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="283" y="305" width="163" height="458"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
-            <view key="contentView" id="GSM-ru-sAf">
-                <rect key="frame" x="0.0" y="0.0" width="163" height="458"/>
+            <rect key="contentRect" x="272" y="172" width="276" height="378"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="iPI-5f-Gcn">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="378"/>
                 <autoresizingMask key="autoresizingMask"/>
             </view>
-            <point key="canvasLocation" x="338.5" y="294"/>
+            <point key="canvasLocation" x="313" y="262"/>
         </window>
     </objects>
 </document>

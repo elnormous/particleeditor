@@ -30,17 +30,14 @@ bool AppDelegate::applicationDidFinishLaunching()
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0f / 60.0f);
 
-	FileUtils::getInstance()->addSearchPath("res");
-
+    NSApplication* application = [NSApplication sharedApplication];
+    ViewController* viewController = [[ViewController alloc] initWithNibName:@"MainMenu" bundle:nil];
+    application.delegate = viewController;
+    [viewController view];
+    application.mainMenu = viewController.mainMenu;
+    
     auto scene = ParticleEditor::Editor::create();
     director->runWithScene(scene);
-    
-    ViewController *vc = [[ViewController alloc] initWithNibName:@"MainMenu" bundle:nil];
-    [[NSApplication sharedApplication] setDelegate:vc];
-    
-    [vc view];
-    //[vc view];
-    [NSApplication sharedApplication].mainMenu = vc.mainMenu;
     
     return true;
 }

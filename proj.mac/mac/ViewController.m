@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad
 {
-
+    _window.becomesKeyOnlyIfNeeded = YES;
 }
 
 - (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename
