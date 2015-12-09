@@ -11,7 +11,7 @@
 		303BFC331BC5D870007026CC /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 303BFC321BC5D870007026CC /* libcurl.tbd */; };
 		306ED3581BD6E00500A0A5EF /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 303BFC2A1BC5D7C6007026CC /* libiconv.tbd */; };
 		306FDFB71A607C440089CA66 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 306FDFB61A607C440089CA66 /* libcocos2d Mac.a */; };
-		308EE35C1C18876F00B493C5 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 308EE35B1C18876F00B493C5 /* particle.png */; };
+		308EE35E1C188A3600B493C5 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 308EE35D1C188A3600B493C5 /* particle.png */; };
 		30A7901F1C1788840044CDD0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A7901E1C1788840044CDD0 /* MainMenu.xib */; };
 		30A790211C1789AD0044CDD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A790201C1789AD0044CDD0 /* ViewController.m */; };
 		30A790251C1798930044CDD0 /* Toolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A790241C1798930044CDD0 /* Toolbox.m */; };
@@ -63,7 +63,7 @@
 		306ED3561BD6DFD100A0A5EF /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
 		306FDFB61A607C440089CA66 /* libcocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d Mac.a"; path = "../../../Libraries/cocos2d-x-3.3/build/build/libcocos2d Mac.a"; sourceTree = "<group>"; };
 		3082AE271BF80843000EED2D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
-		308EE35B1C18876F00B493C5 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = particle.png; path = ../../../Desktop/particle.png; sourceTree = "<group>"; };
+		308EE35D1C188A3600B493C5 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
 		30A7901E1C1788840044CDD0 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = mac/MainMenu.xib; sourceTree = "<group>"; };
 		30A790201C1789AD0044CDD0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = mac/ViewController.m; sourceTree = "<group>"; };
 		30A790231C178A1F0044CDD0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = mac/ViewController.h; sourceTree = "<group>"; };
@@ -206,7 +206,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				308EE35B1C18876F00B493C5 /* particle.png */,
+				308EE35D1C188A3600B493C5 /* particle.png */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -265,8 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				308EE35C1C18876F00B493C5 /* particle.png in Resources */,
 				30A7901F1C1788840044CDD0 /* MainMenu.xib in Resources */,
+				308EE35E1C188A3600B493C5 /* particle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
