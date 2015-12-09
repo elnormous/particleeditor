@@ -37,8 +37,43 @@ namespace ParticleEditor
         
         _eventDispatcher->addEventListenerWithSceneGraphPriority(_keybListener, this);
         
+        _particleSystem = ParticleSystemQuad::create();
+        _particleSystem->setPosition(100.0f, 100.0f);
+        
+        cocos2d::Texture2D* texture = Director::getInstance()->getTextureCache()->addImage("particle.png");
+        
+        if (texture)
+        {
+            Rect rect = Rect::ZERO;
+            rect.size = texture->getContentSize();
+            _particleSystem->setTextureWithRect(texture, rect);
+        }
+        
+        _particleSystem->setTotalParticles(1000);
+        _particleSystem->setPosVar(Vec2(10.0f, 10.0f));
+        
+        _particleSystem->setSpeed(100.0f);
+        
+        _particleSystem->setLife(10.0f);
+        _particleSystem->setStartSize(100.0f);
+        _particleSystem->setStartColor(Color4F(1.0f, 1.0f, 1.0f, 1.0f));
+        
+        _particleSystem->resetSystem();
+        
+        addChild(_particleSystem);
+        
+        scheduleUpdate();
+        
 		return true;
 	}
+    
+    void Editor::update(float delta)
+    {
+        if (_particleSystem->getParticleCount() == 0)
+        {
+            _particleSystem->resetSystem();
+        }
+    }
     
     void Editor::onMouseDown(cocos2d::EventMouse* event)
     {

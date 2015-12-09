@@ -7,6 +7,8 @@ namespace ParticleEditor
 	public:
 		// Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
 		virtual bool init() override;
+        
+        virtual void update(float delta) override;
 		
 		// implement the "static create()" method manually
 		CREATE_FUNC(Editor);
@@ -27,5 +29,7 @@ namespace ParticleEditor
         cocos2d::EventListenerMouse* _mouseListener = nullptr;
         
         cocos2d::EventListenerKeyboard* _keybListener = nullptr;
+        
+        cocos2d::ParticleSystemQuad* _particleSystem = nullptr;
 	};
 }
