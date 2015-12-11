@@ -57,9 +57,12 @@ namespace ParticleEditor
         // position variance
         _particleSystem->setPosVar(Vec2(7.0f, 7.0f));
         
+        //_particleSystem->setSourcePosition(Vec2(100.0f, 100.0f));
+        
         // maximum particles
         _particleSystem->setTotalParticles(77);
         
+        // emit angle
         _particleSystem->setAngle(90.0f);
         _particleSystem->setAngleVar(10.0f);
         
@@ -102,17 +105,34 @@ namespace ParticleEditor
         _particleSystem->setEndSpinVar(0.0f);
         
         // start color
-        _particleSystem->setStartColor(Color4F(1.0f, 0.0f, 1.0f, 1.0f));
+        _particleSystem->setStartColor(Color4F(1.0f, 0.0f, 1.0f, 0.5f));
         _particleSystem->setStartColorVar(Color4F(0.0f, 0.0f, 0.0f, 0.0f));
         
         // end color
         _particleSystem->setEndColor(Color4F(0.0f, 0.0f, 1.0f, 1.0f));
         _particleSystem->setEndColorVar(Color4F(0.0f, 0.0f, 0.0f, 0.0f));
         
+        // min radius
+        /*_particleSystem->setStartRadius(300.0f);
+        _particleSystem->setStartRadiusVar(0.0f);
+        
+        // max radius
+        _particleSystem->setEndRadius(0.0f);
+        _particleSystem->setEndRadiusVar(0.0f);
+        
+        // rotate per second
+        _particleSystem->setRotatePerSecond(360.0f);
+        _particleSystem->setRotatePerSecondVar(0.0f);*/
+        
+        _particleSystem->setPositionType(ParticleSystem::PositionType::RELATIVE);
+        
+        
+        _particleSystem->setEmissionRate(static_cast<float>(_particleSystem->getTotalParticles()) / _particleSystem->getLife());
+        
         // blend mode
         _particleSystem->setBlendFunc({GL_ONE, GL_ONE_MINUS_SRC_ALPHA});
         
-        _particleSystem->resetSystem();
+        //_particleSystem->resetSystem();
         
         addChild(_particleSystem);
         
