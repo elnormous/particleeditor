@@ -68,8 +68,18 @@ namespace ParticleEditor
         
         // speed
         _particleSystem->setSpeed(225.0f);
-        
         _particleSystem->setSpeedVar(30.0f);
+        
+        // gravity
+        _particleSystem->setGravity(Vec2(0.0f, 0.0f));
+        
+        // radial acceleration
+        _particleSystem->setRadialAccel(0.0f);
+        _particleSystem->setRadialAccelVar(0.0f);
+        
+        // tangential acceleration
+        _particleSystem->setTangentialAccel(0.0f);
+        _particleSystem->setTangentialAccelVar(0.0f);
         
         //lifespan
         _particleSystem->setLife(1.0f);
@@ -83,6 +93,14 @@ namespace ParticleEditor
         _particleSystem->setEndSize(0.0f);
         _particleSystem->setEndSizeVar(0.0f);
         
+        // start rotation
+        _particleSystem->setStartSpin(0.0f);
+        _particleSystem->setStartSpinVar(0.0f);
+        
+        // end rotation
+        _particleSystem->setEndSpin(0.0f);
+        _particleSystem->setEndSpinVar(0.0f);
+        
         // start color
         _particleSystem->setStartColor(Color4F(1.0f, 0.0f, 1.0f, 1.0f));
         _particleSystem->setStartColorVar(Color4F(0.0f, 0.0f, 0.0f, 0.0f));
@@ -90,6 +108,9 @@ namespace ParticleEditor
         // end color
         _particleSystem->setEndColor(Color4F(0.0f, 0.0f, 1.0f, 1.0f));
         _particleSystem->setEndColorVar(Color4F(0.0f, 0.0f, 0.0f, 0.0f));
+        
+        // blend mode
+        _particleSystem->setBlendFunc({GL_ONE, GL_ONE_MINUS_SRC_ALPHA});
         
         _particleSystem->resetSystem();
         
@@ -104,7 +125,7 @@ namespace ParticleEditor
     {
         if (_particleSystem->getParticleCount() == 0)
         {
-            _particleSystem->resetSystem();
+            //_particleSystem->resetSystem();
         }
     }
     
