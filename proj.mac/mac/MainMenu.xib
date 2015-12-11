@@ -7,7 +7,59 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ViewController">
             <connections>
+                <outlet property="angleField" destination="D3V-V3-EKn" id="s0S-xG-Zj4"/>
+                <outlet property="angleVarianceField" destination="zpJ-fa-2IS" id="X48-Te-Nj3"/>
+                <outlet property="blendDstField" destination="Bc7-Zj-xHe" id="8xr-hc-AIh"/>
+                <outlet property="blendSrcField" destination="uHA-Xe-Qmt" id="ddl-v4-L3u"/>
+                <outlet property="durationField" destination="VsM-Y8-ZHd" id="kor-na-TQg"/>
+                <outlet property="endAlphaField" destination="lM2-jV-sOi" id="6vA-dd-K6u"/>
+                <outlet property="endAlphaVarianceField" destination="pCC-Bm-BhP" id="LSF-kS-Jf5"/>
+                <outlet property="endBlueField" destination="YOR-wW-SmO" id="O1H-vj-sCg"/>
+                <outlet property="endBlueVarianceField" destination="YYH-lo-wSC" id="cLj-5M-ExV"/>
+                <outlet property="endGreenField" destination="Vd5-zH-WdS" id="2oQ-ZQ-Ktw"/>
+                <outlet property="endGreenVarianceField" destination="k7u-GI-Uei" id="O4h-9d-emk"/>
+                <outlet property="endRadiusField" destination="Prm-pO-ZcK" id="myj-7X-GzS"/>
+                <outlet property="endRadiusVarianceField" destination="XHs-W4-hfh" id="ycQ-VC-b8N"/>
+                <outlet property="endRedField" destination="jY9-xB-ZPQ" id="ys7-Lk-Mdr"/>
+                <outlet property="endRedVarianceField" destination="Pmt-TH-akq" id="iCW-ra-QP3"/>
+                <outlet property="endSizeField" destination="SCZ-B3-OQp" id="kQn-Cf-QTr"/>
+                <outlet property="endSizeVarianceField" destination="MiR-rm-Iux" id="VzL-tX-NpE"/>
+                <outlet property="endSpinField" destination="nmR-Pr-NBu" id="Meq-BK-rA9"/>
+                <outlet property="endSpinVarianceField" destination="v31-wk-SVh" id="UQR-VX-Uq9"/>
+                <outlet property="gravityXField" destination="xM4-Oy-lFb" id="WmQ-T0-6Zt"/>
+                <outlet property="gravityYField" destination="RDX-e5-vJc" id="jzY-A3-IAE"/>
+                <outlet property="lifeField" destination="MtS-nJ-fF7" id="tV5-O5-wcM"/>
+                <outlet property="lifeVarianceField" destination="Qep-x1-hJH" id="CAO-17-OEg"/>
                 <outlet property="mainMenu" destination="AYu-sK-qS6" id="xL1-eI-9T3"/>
+                <outlet property="positionTypeField" destination="huf-a9-BBZ" id="qLH-rB-ff3"/>
+                <outlet property="positionXField" destination="g9N-Sg-WyM" id="sre-sK-a0t"/>
+                <outlet property="positionXVarianceField" destination="OJF-rZ-nNZ" id="nEv-Lp-eDO"/>
+                <outlet property="positionYField" destination="pge-ar-arp" id="X2d-7b-1Wk"/>
+                <outlet property="positionYVarianceField" destination="gNr-bb-GhI" id="Oqg-jz-jrm"/>
+                <outlet property="radialAccelerationField" destination="CMc-QK-zVf" id="5RL-wp-lAG"/>
+                <outlet property="radialAccelerationVarianceField" destination="ekW-in-dxH" id="umB-xi-Iuj"/>
+                <outlet property="rotatePerSecondField" destination="waH-IX-OMb" id="qKe-a2-ov6"/>
+                <outlet property="rotatePerSecondVarianceField" destination="mOu-zQ-bLw" id="p8W-qs-Jsv"/>
+                <outlet property="speedField" destination="wAV-ip-AcD" id="NAR-N6-6SK"/>
+                <outlet property="speedVarianceField" destination="CGq-PY-8FB" id="3oJ-ar-lxC"/>
+                <outlet property="startAlphaField" destination="wrY-xn-eHY" id="DfR-YF-4jJ"/>
+                <outlet property="startAlphaVarianceField" destination="iMt-H4-l7r" id="BCR-Zr-fLD"/>
+                <outlet property="startBlueField" destination="WTb-hQ-2Ue" id="Xfy-2P-waU"/>
+                <outlet property="startBlueVarianceField" destination="KtC-tQ-FIm" id="oHV-fv-TiN"/>
+                <outlet property="startGreenField" destination="h9c-6M-niC" id="4SO-rT-wv4"/>
+                <outlet property="startGreenVarianceField" destination="kip-2c-D3F" id="VXx-fV-wdB"/>
+                <outlet property="startRadiusField" destination="tUn-Hv-IJu" id="OP3-er-loe"/>
+                <outlet property="startRadiusVarianceField" destination="fQK-Vo-ns4" id="qQe-VA-jQ2"/>
+                <outlet property="startRedField" destination="QjH-G7-s5L" id="b6u-By-w2A"/>
+                <outlet property="startRedVarianceField" destination="4NR-Ge-x4g" id="pSB-GB-RKO"/>
+                <outlet property="startSizeField" destination="i2f-QJ-Ggs" id="WqG-Fy-ziy"/>
+                <outlet property="startSizeVarianceField" destination="pjs-T9-WWk" id="UHS-1A-zDc"/>
+                <outlet property="startSpinField" destination="zyD-Om-TSV" id="Adk-Yc-qPX"/>
+                <outlet property="startSpinVarianceField" destination="e9v-Xe-sx0" id="Ssb-d7-ndY"/>
+                <outlet property="tangentialAccelerationField" destination="OdY-rA-42x" id="RoK-Av-485"/>
+                <outlet property="tangentialAccelerationVarianceField" destination="Ujk-il-Y0N" id="RPY-n1-8wb"/>
+                <outlet property="totalParticlesField" destination="BJp-0A-CPo" id="v8z-qh-zrn"/>
+                <outlet property="typeField" destination="nbj-R8-9jo" id="eEH-a9-5XG"/>
                 <outlet property="view" destination="iPI-5f-Gcn" id="Eyr-Kd-yqD"/>
                 <outlet property="window" destination="CjT-U4-1FX" id="fZd-lS-Gl4"/>
             </connections>
