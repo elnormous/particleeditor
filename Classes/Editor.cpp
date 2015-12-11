@@ -23,6 +23,8 @@ namespace ParticleEditor
 			return false;
 		}
         
+        Size visibleSize = Director::getInstance()->getVisibleSize();
+        
         _mouseListener = EventListenerMouse::create();
         
         _mouseListener->onMouseDown = CC_CALLBACK_1(Editor::onMouseDown, this);
@@ -38,7 +40,7 @@ namespace ParticleEditor
         _eventDispatcher->addEventListenerWithSceneGraphPriority(_keybListener, this);
         
         _particleSystem = ParticleSystemQuad::create();
-        _particleSystem->setPosition(100.0f, 100.0f);
+        _particleSystem->setPosition(visibleSize / 2.0f);
         
         cocos2d::Texture2D* texture = Director::getInstance()->getTextureCache()->addImage("particle.png");
         
@@ -49,14 +51,45 @@ namespace ParticleEditor
             _particleSystem->setTextureWithRect(texture, rect);
         }
         
-        _particleSystem->setTotalParticles(1000);
-        _particleSystem->setPosVar(Vec2(10.0f, 10.0f));
+        // duration
+        _particleSystem->setDuration(-1.0f);
         
-        _particleSystem->setSpeed(100.0f);
+        // position variance
+        _particleSystem->setPosVar(Vec2(7.0f, 7.0f));
         
-        _particleSystem->setLife(10.0f);
-        _particleSystem->setStartSize(100.0f);
-        _particleSystem->setStartColor(Color4F(1.0f, 1.0f, 1.0f, 1.0f));
+        // maximum particles
+        _particleSystem->setTotalParticles(77);
+        
+        _particleSystem->setAngle(90.0f);
+        _particleSystem->setAngleVar(10.0f);
+        
+        // type
+        _particleSystem->setEmitterMode(ParticleSystem::Mode::GRAVITY);
+        
+        // speed
+        _particleSystem->setSpeed(225.0f);
+        
+        _particleSystem->setSpeedVar(30.0f);
+        
+        //lifespan
+        _particleSystem->setLife(1.0f);
+        _particleSystem->setLifeVar(0.0f);
+        
+        // start size
+        _particleSystem->setStartSize(64.0f);
+        _particleSystem->setStartSizeVar(5.0f);
+        
+        // end size
+        _particleSystem->setEndSize(0.0f);
+        _particleSystem->setEndSizeVar(0.0f);
+        
+        // start color
+        _particleSystem->setStartColor(Color4F(1.0f, 0.0f, 1.0f, 1.0f));
+        _particleSystem->setStartColorVar(Color4F(0.0f, 0.0f, 0.0f, 0.0f));
+        
+        // end color
+        _particleSystem->setEndColor(Color4F(0.0f, 0.0f, 1.0f, 1.0f));
+        _particleSystem->setEndColorVar(Color4F(0.0f, 0.0f, 0.0f, 0.0f));
         
         _particleSystem->resetSystem();
         
