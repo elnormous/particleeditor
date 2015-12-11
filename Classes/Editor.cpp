@@ -62,12 +62,12 @@ namespace ParticleEditor
         // maximum particles
         _particleSystem->setTotalParticles(77);
         
+        // type
+        _particleSystem->setEmitterMode(ParticleSystem::Mode::GRAVITY);
+        
         // emit angle
         _particleSystem->setAngle(90.0f);
         _particleSystem->setAngleVar(10.0f);
-        
-        // type
-        _particleSystem->setEmitterMode(ParticleSystem::Mode::GRAVITY);
         
         // speed
         _particleSystem->setSpeed(225.0f);
