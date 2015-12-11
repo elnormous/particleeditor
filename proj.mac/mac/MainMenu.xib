@@ -679,19 +679,19 @@
         <window title="Tools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="CjT-U4-1FX" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
-            <rect key="contentRect" x="100" y="569" width="359" height="736"/>
+            <rect key="contentRect" x="100" y="569" width="372" height="736"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="iPI-5f-Gcn">
-                <rect key="frame" x="0.0" y="0.0" width="359" height="736"/>
+                <rect key="frame" x="0.0" y="0.0" width="372" height="736"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ke-6H-QA6">
-                        <rect key="frame" x="0.0" y="-2" width="359" height="742"/>
+                        <rect key="frame" x="0.0" y="-2" width="371" height="742"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="Emitter" identifier="1" id="WVK-cf-0Va">
                                 <view key="view" id="EEu-fj-sId">
-                                    <rect key="frame" x="10" y="33" width="339" height="696"/>
+                                    <rect key="frame" x="10" y="33" width="351" height="696"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kC6-U9-ld8">
@@ -1070,8 +1070,8 @@
                                 </view>
                             </tabViewItem>
                             <tabViewItem label="Particle" identifier="2" id="b4g-22-Cpn">
-                                <view key="view" ambiguous="YES" id="HLE-ra-Yj5">
-                                    <rect key="frame" x="10" y="33" width="339" height="696"/>
+                                <view key="view" id="HLE-ra-Yj5">
+                                    <rect key="frame" x="10" y="33" width="351" height="696"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgx-7O-3zg">
@@ -1260,7 +1260,7 @@
                             </tabViewItem>
                             <tabViewItem label="Color" identifier="1" id="5Zq-YE-rje">
                                 <view key="view" id="ug1-lv-IpC">
-                                    <rect key="frame" x="10" y="33" width="339" height="696"/>
+                                    <rect key="frame" x="10" y="33" width="351" height="696"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oR3-CL-ct8">
@@ -1523,16 +1523,79 @@
                                 </view>
                             </tabViewItem>
                             <tabViewItem label="Texture" identifier="1" id="kZb-5K-Jbp">
-                                <view key="view" id="fTQ-Kl-QIM">
-                                    <rect key="frame" x="10" y="33" width="339" height="696"/>
+                                <view key="view" ambiguous="YES" id="fTQ-Kl-QIM">
+                                    <rect key="frame" x="10" y="33" width="351" height="696"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6q-en-1Nj">
+                                            <rect key="frame" x="15" y="673" width="115" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Blend src function" id="mLB-J1-MdY">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHA-Xe-Qmt">
+                                            <rect key="frame" x="136" y="669" width="201" height="26"/>
+                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="OI3-gs-Kvm">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <objectValues>
+                                                    <string>GL_ZERO</string>
+                                                    <string>GL_ONE</string>
+                                                    <string>GL_DST_COLOR</string>
+                                                    <string>GL_ONE_MINUS_DST_COLOR</string>
+                                                    <string>GL_SRC_ALPHA</string>
+                                                    <string>GL_ONE_MINUS_SRC_ALPHA</string>
+                                                    <string>GL_DST_ALPHA</string>
+                                                    <string>GL_ONE_MINUS_DST_ALPHA</string>
+                                                    <string>GL_SRC_ALPHA_SATURATE</string>
+                                                </objectValues>
+                                            </comboBoxCell>
+                                        </comboBox>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V3l-RK-DCj">
+                                            <rect key="frame" x="15" y="645" width="115" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Blend dst function" id="TE7-pX-AHS">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bc7-Zj-xHe">
+                                            <rect key="frame" x="136" y="641" width="201" height="26"/>
+                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="wAb-3e-3wC">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <objectValues>
+                                                    <string>GL_ZERO</string>
+                                                    <string>GL_ONE</string>
+                                                    <string>GL_SRC_COLOR</string>
+                                                    <string>GL_ONE_MINUS_SRC_COLOR</string>
+                                                    <string>GL_SRC_ALPHA</string>
+                                                    <string>GL_ONE_MINUS_SRC_ALPHA</string>
+                                                    <string>GL_DST_ALPHA</string>
+                                                    <string>GL_ONE_MINUS_DST_ALPHA</string>
+                                                </objectValues>
+                                            </comboBoxCell>
+                                        </comboBox>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VNd-ij-WCs">
+                                            <rect key="frame" x="15" y="535" width="50" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Texture" id="6AF-Uf-38i">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
                                 </view>
                             </tabViewItem>
                         </tabViewItems>
                     </tabView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="354.5" y="441"/>
+            <point key="canvasLocation" x="361" y="441"/>
         </window>
     </objects>
 </document>
