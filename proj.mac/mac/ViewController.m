@@ -9,9 +9,9 @@
 
 @implementation ViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithNibName:@"MainMenu" bundle:Nil];
     
     if (self)
     {

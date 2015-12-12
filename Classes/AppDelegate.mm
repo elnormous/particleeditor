@@ -52,7 +52,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     director->setAnimationInterval(1.0f / 60.0f);
 
     NSApplication* application = [NSApplication sharedApplication];
-    ViewController* viewController = [[ViewController alloc] initWithNibName:@"MainMenu" bundle:nil];
+    ViewController* viewController = [[ViewController alloc] init];
     [viewController view];
     application.mainMenu = viewController.mainMenu;
     
