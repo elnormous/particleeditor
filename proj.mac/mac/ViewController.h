@@ -7,7 +7,7 @@
 //
 #import <Foundation/Foundation.h>
 
-@interface ViewController : NSViewController<NSApplicationDelegate>
+@interface ViewController : NSViewController
 
 @property (assign) IBOutlet NSPanel* window;
 @property (assign) IBOutlet NSMenu* mainMenu;

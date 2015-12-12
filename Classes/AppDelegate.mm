@@ -1,9 +1,30 @@
 #include "AppDelegate.h"
 #include "Editor.h"
-
 #include "ViewController.h"
+#import <objc/runtime.h>
 
 USING_NS_CC;
+
+@interface ApplicationDelegate : NSObject
+{
+    
+}
+@end
+
+@implementation ApplicationDelegate
+
+- (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename
+{
+    NSWindow* mainWindow = [NSApplication sharedApplication].mainWindow;
+    
+    NSAlert* alert = [NSAlert alertWithMessageText:@"Test" defaultButton:@"OK" alternateButton:@"Cancel" otherButton:Nil informativeTextWithFormat:@"openFile"];
+    
+    [alert beginSheetModalForWindow:mainWindow completionHandler:Nil];
+    
+    return YES;
+}
+
+@end
 
 AppDelegate::AppDelegate()
 {
@@ -32,9 +53,16 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     NSApplication* application = [NSApplication sharedApplication];
     ViewController* viewController = [[ViewController alloc] initWithNibName:@"MainMenu" bundle:nil];
-    application.delegate = viewController;
     [viewController view];
     application.mainMenu = viewController.mainMenu;
+    
+    SEL openFileSelector = @selector(application:openFile:);
+    Method openFileMethod = class_getInstanceMethod(ApplicationDelegate.class, openFileSelector);
+    
+    class_addMethod(application.delegate.class,
+                    openFileSelector,
+                    method_getImplementation(openFileMethod),
+                    method_getTypeEncoding(openFileMethod));
     
     auto scene = ParticleEditor::Editor::create();
     director->runWithScene(scene);
